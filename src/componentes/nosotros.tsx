@@ -1,4 +1,4 @@
-import React from 'react'
+
 import '../estilos/nosotros.css'
 import logo from '../imgs/logo-muebleria-gonzales.jpg'
 

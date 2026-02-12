@@ -1,4 +1,4 @@
-import React from 'react'
+
 import '../estilos/pie-pagina.css'
 
 export const Contacto = () => {

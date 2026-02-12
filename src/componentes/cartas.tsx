@@ -1,4 +1,4 @@
-import React from 'react'
+
 import '../estilos/cartas.css'
 import tapiceria from '../imgs/tapiceria.jpg'
 import sillones from '../imgs/sillon-muestra.jpg'
