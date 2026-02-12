@@ -56,4 +56,9 @@
     object-fit: cover;
     margin: 10px;
     }
+    .info{
+    width: 100%;
+    color: white;
+    padding: 20px;
+    }
 }

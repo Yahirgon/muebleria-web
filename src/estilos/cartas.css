@@ -49,11 +49,12 @@
 }
 @media (max-width: 768px){
     .cartas{
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     }
     .carta{
     background-color: rgba(255, 193, 85, 0.80);

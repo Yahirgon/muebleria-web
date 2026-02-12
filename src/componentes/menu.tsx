@@ -4,6 +4,7 @@ import logo from "../imgs/logo-muebleria-gonzales.jpg"
 
 export const Menu = () => {
     const [activo, setActivo] = useState('/')
+    const [abierto, setAbierto] = useState(false)
 
     const menuItems = [
         { name: 'Inicio', link: '/' },
@@ -17,12 +18,18 @@ export const Menu = () => {
             <img src={logo} alt="Logo de Mueblería González"/>
             <p>Mueblería Gonzales</p>
         </div>
-      <ul>
+        <button className='hambur' onClick={() => setAbierto(!abierto)}>
+        {abierto ? "✖" : "☰"}
+      </button>
+      <ul className={`links ${abierto ? "abrir" : ""}`}>
         {menuItems.map((item, index) => (
           <li 
           key={index} 
           className={activo == item.link ? 'activo' : ''} 
-          onClick={() => setActivo(item.link)}>
+          onClick={() => {
+            setActivo(item.link);
+            setAbierto(false)
+          }}>
             <a href={item.link}>
               {item.name} 
 
@@ -30,6 +37,7 @@ export const Menu = () => {
           </li>
         ))}
       </ul>
+      
     </nav>
   )
 }
