@@ -1,4 +1,3 @@
-
 import { Menu } from './componentes/menu.tsx'
 import { Cartas } from './componentes/cartas.tsx'
 import { Nosotros } from './componentes/nosotros.tsx'
