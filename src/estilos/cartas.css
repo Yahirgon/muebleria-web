@@ -47,3 +47,23 @@
 #products{
     scroll-margin-top: 120px;
 }
+@media (max-width: 768px){
+    .cartas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+    .carta{
+    background-color: rgba(255, 193, 85, 0.80);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px 0px;
+    }
+}
