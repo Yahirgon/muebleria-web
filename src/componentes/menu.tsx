@@ -26,10 +26,9 @@ export const Menu = () => {
           <li 
           key={index} 
           className={activo == item.link ? 'activo' : ''} 
-          onClick={() => {
-            setActivo(item.link);
-            setAbierto(false)
-          }}>
+          onClick={() => 
+            setActivo(item.link)
+          }>
             <a href={item.link}>
               {item.name} 
 
