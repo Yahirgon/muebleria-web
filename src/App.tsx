@@ -3,6 +3,7 @@ import { Cartas } from './componentes/cartas.tsx'
 import { Nosotros } from './componentes/nosotros.tsx'
 import { Formulario } from './componentes/formulario.tsx'
 import { Contacto } from './componentes/contacto.tsx'
+import { Productos } from './componentes/productos.tsx'
 import './estilos/cuerpo.css'
 
 export const App = () => {
@@ -14,6 +15,7 @@ export const App = () => {
       <main>
         <Nosotros />
         <Cartas />
+        <Productos />
       </main>
       <footer>
         <Contacto />
