@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect, ReactNode } from "react";
+import type { createContext, useState, useEffect, ReactNode } from "react";
 
 
 // 🔹 Tipo de producto
