@@ -93,7 +93,7 @@
 .carrito-icon{
    
     position: fixed;
-    top: calc(100vh - 80px);
+    top: calc(100vh - 100px);
     right: 20px;
     background-color: rgb(220, 144, 22);
     color: white;
