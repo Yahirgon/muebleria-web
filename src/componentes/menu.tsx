@@ -38,11 +38,11 @@ export const Menu = () => {
             </a>
           </li>
         ))}
+        
+      </ul>
         <div className="carrito-icon" onClick={() => setMostrarCarrito(!mostrarCarrito)}>
           🛒 {carrito.length}
         </div>
-      </ul>
-     
       <div className={`carrito-dropdown ${mostrarCarrito ? "abierto" : ""}`}>
         <button 
           className="cerrar-carrito"
