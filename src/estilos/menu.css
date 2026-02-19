@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0px;
@@ -91,14 +91,24 @@
 
 /* Carrito */
 .carrito-icon{
-    background-color: rgb(208, 157, 74);
+   
+    position: fixed;
+    top: calc(100vh - 80px);
+    right: 20px;
+    background-color: rgb(220, 144, 22);
     color: white;
-    border-radius: 999px;
-    padding: 20px 20px;
-    font-size: 1rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
     cursor: pointer;
-    transition: background-color 300ms ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    z-index: 9999;
 }
+
 .carrito-icon:hover{
     background-color: rgb(220, 144, 22);
     transition: background-color 300ms ease;
@@ -261,21 +271,7 @@
         border: 1px solid rgb(139, 86, 0);
         text-align: center;
     }
-    .carrito-icon{
-        
-        position: fixed;
-        top: 500px;
-        right: 15px;
-        background-color: rgb(220, 144, 22);
-        color: white;
-        padding: 12px 16px;
-        border-radius: 50px;
-        font-size: 1.2rem;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        z-index: 4000;
-        cursor: pointer;
-        z-index: -1;
-    }
+     
     
     .carrito-dropdown{
         position: absolute;
