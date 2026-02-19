@@ -91,9 +91,8 @@
 
 /* Carrito */
 .carrito-icon{
-   
     position: fixed;
-    top: calc(100vh - 100px);
+    top: calc(100vh - 110px);
     right: 20px;
     background-color: rgb(220, 144, 22);
     color: white;
@@ -106,7 +105,7 @@
     font-size: 1.2rem;
     cursor: pointer;
     box-shadow: 0 6px 18px rgba(0,0,0,0.3);
-    z-index: 9999;
+    z-index: 5000;
 }
 
 .carrito-icon:hover{
@@ -200,7 +199,7 @@
     flex-wrap: wrap;
     border: 1px solid rgb(255, 255, 255);
     padding: 10px;
-    
+    z-index: 9999;
 }
 .carrito-producto p{
     margin: 5px 0;

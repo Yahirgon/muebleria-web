@@ -4,7 +4,7 @@ import logo from "../imgs/logo-muebleria-gonzales.jpg"
 import { CartContext } from '../context/CartContext'  
 
 export const Menu = () => {
-    const [activo, setActivo] = useState('/')
+    const [activo, setActivo] = useState('#nosotros')
     const [abierto, setAbierto] = useState(false)
     const { carrito, eliminarDelCarrito, total } = useContext(CartContext);
     const [mostrarCarrito, setMostrarCarrito] = useState(false);
@@ -34,7 +34,6 @@ export const Menu = () => {
           }>
             <a href={item.link}>
               {item.name} 
-
             </a>
           </li>
         ))}
