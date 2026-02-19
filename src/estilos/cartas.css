@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    scroll-margin-top: 120px;
 }
 .carta{
     background-color: rgba(255, 193, 85, 0.80);
@@ -27,8 +28,7 @@
     user-select: none;
 }
 .carta button{
-    background-color: rgb(208, 157, 74);
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 999px;
     border: none;
     padding: 10px 20px;
@@ -37,11 +37,13 @@
     transition: background-color 300ms ease;
 }
 .carta:hover{
-    transform: scale(1.05);
+    transform: scale(1);
     transition: transform 300ms ease;
 }
 .carta button:hover{
-    border-radius: 8px;
+    background-color: rgb(208, 157, 74);
+    transform: scale(0.98);
+    color: white;
     transition: all 300ms ease;
 }
 #products{

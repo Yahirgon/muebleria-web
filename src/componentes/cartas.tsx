@@ -12,7 +12,7 @@ export const Cartas = () => {
     }
 
   return (
-    <div className='cartas' id='products'>
+    <div className='cartas' id='servicios'>
         <div className='carta'>
             <img src={tapiceria} alt="Imagen de tapicería"/>
             <h2>Tapisado</h2>
@@ -21,7 +21,7 @@ export const Cartas = () => {
         </div>
         <div className='carta'>
             <img src={sillones} alt="Imagen de sillones"/>
-            <h2>Sillores</h2>
+            <h2>Sillones</h2>
             <p>Nos dedicamos a la fabricación y venta de sillones diseñados para brindar máximo confort y estilo. Ofrecemos distintos modelos, telas y colores, adaptándonos a las necesidades y gustos de cada cliente.</p>
             <button onClick={descargarPDF}>
                 Descargar Catálogo

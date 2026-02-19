@@ -1,15 +1,18 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import '../estilos/menu.css'
 import logo from "../imgs/logo-muebleria-gonzales.jpg"
+import { CartContext } from '../context/CartContext'  
 
 export const Menu = () => {
     const [activo, setActivo] = useState('/')
     const [abierto, setAbierto] = useState(false)
+    const { carrito, eliminarDelCarrito, total } = useContext(CartContext);
+    const [mostrarCarrito, setMostrarCarrito] = useState(false);
 
     const menuItems = [
-        { name: 'Inicio', link: '/' },
         { name: 'Nosotros', link: '#nosotros' },
-        { name: 'Productos', link: '#products' },
+        { name: 'Servicios', link: '#servicios' },
+        { name: 'Productos', link: '#productos' },
         { name: 'Contacto', link: '#contacto' },
     ]
   return (
@@ -35,7 +38,40 @@ export const Menu = () => {
             </a>
           </li>
         ))}
+        <div className="carrito-icon" onClick={() => setMostrarCarrito(!mostrarCarrito)}>
+          🛒 {carrito.length}
+        </div>
       </ul>
+     
+      <div className={`carrito-dropdown ${mostrarCarrito ? "abierto" : ""}`}>
+        <button 
+          className="cerrar-carrito"
+          onClick={() => setMostrarCarrito(false)}
+        >
+          ✖
+        </button>
+        <h3>Carrito</h3>
+        <div className='carrito-lista'>
+          
+        {carrito.length === 0 && <p>No hay productos</p>}
+        {carrito.map(item => (
+          <div key={item.id} className='carrito-producto'>
+
+            <p>Producto: {item.nombre}</p>
+            <p>Cantidad: {item.cantidad}</p>
+            <p>Precio: ${item.precio * item.cantidad}</p>
+            <button onClick={() => eliminarDelCarrito(item.id)}>
+              Eliminar
+            </button>
+            
+          </div>
+
+        ))}
+        </div>
+
+        <h4 className='total'>Total: ${total}</h4>
+      </div>
+    
       
     </nav>
   )
